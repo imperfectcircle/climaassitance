@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+/* Colors */
 
 :root {
     --general-bg-color: #eee;
 }
+
+/* General */
 
 html {
     box-sizing: border-box;
@@ -11,4 +15,24 @@ html {
 body {
     margin: 0;
     background: var(--general-bg-color);
+    font-family: 'Roboto', sans-serif;
 }
+
+h1,
+h1,
+h3,
+.h1,
+.h2,
+.h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Text Colors and BG Colors */
