@@ -64,89 +64,113 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!-- Header & Navbar-->
-        <header>
-            <div
-                class="col-12 d-flex justify-content-between align-items-center"
-            ></div>
-
+        <!-- Header, Home & Navbar-->
+        <header class="header-img bg-gamma">
             <!-- Navbar -->
             <nav
-                class="navbar navbar-expand-sm navbar-dark bg-dark"
-                aria-label="Third navbar example"
+                id="navbar"
+                class="navbar navbar-expand-sm navbar-dark fixed-top"
+                aria-label="navbar"
             >
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Expand at sm</a>
+                    <a class="navbar-brand" href="#"
+                        ><img
+                            class="logo"
+                            src="./media/logo-vettoriale.png"
+                            alt="logo"
+                    /></a>
                     <button
                         class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#navbarsExample03"
-                        aria-controls="navbarsExample03"
+                        data-bs-target="#navbarCA"
+                        aria-controls="navbarCA"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarsExample03">
-                        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                            <li class="nav-item">
+                    <div class="collapse navbar-collapse" id="navbarCA">
+                        <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+                            <li class="nav-item home active-custom">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link"
                                     aria-current="page"
-                                    href="#"
-                                    >Home</a
+                                    href="#home"
+                                    ><h4>Home</h4></a
                                 >
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdown03"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                    >Dropdown</a
+                            <li class="nav-item servizi">
+                                <a class="nav-link" href="#servizi"
+                                    ><h4>Servizi</h4></a
                                 >
-                                <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdown03"
+                            </li>
+                            <li class="nav-item gallery">
+                                <a class="nav-link" href="#gallery"
+                                    ><h4>Gallery</h4></a
                                 >
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Action</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Another action</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Something else here</a
-                                        >
-                                    </li>
-                                </ul>
+                            </li>
+                            <li class="nav-item contatti">
+                                <a class="nav-link" href="#contatti"
+                                    ><h4>Contatti</h4></a
+                                >
                             </li>
                         </ul>
-                        <form>
-                            <input
-                                class="form-control"
-                                type="text"
-                                placeholder="Search"
-                                aria-label="Search"
-                            />
-                        </form>
+                        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                            <li class="btn-custom me-3">
+                                <a
+                                    href="tel:+390332798217"
+                                    title="+390332798217"
+                                    ><lord-icon
+                                        class="pe-2"
+                                        src="https://cdn.lordicon.com/hcndxtmn.json"
+                                        trigger="hover"
+                                        colors="primary:#fff"
+                                        style="width: 30; height: 30px"
+                                    >
+                                    </lord-icon
+                                    >CHIAMA ORA</a
+                                >
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
+            <section id="home" class="container-fluid">
+                <div
+                    class="header-box row justify-content-center align-items-center"
+                >
+                    <div
+                        class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+                    >
+                        <p>ClimaAssistance</p>
+                    </div>
+                </div>
+            </section>
         </header>
+        <!-- Fine Header, Home & Navbar -->
+
+        <!-- Servizi -->
+        <section id="servizi" class="h-100 bg-warning">
+            <h2>Servizi</h2>
+        </section>
+        <!-- Fine Servizi -->
+
+        <!-- Gallery -->
+        <section id="gallery" class="h-100 bg-info">
+            <h2>Gallery</h2>
+        </section>
+        <!-- Fine Gallery -->
+
+        <!-- Contatti -->
+        <section id="contatti" class="h-100 bg-success">
+            <h2>Contatti</h2>
+        </section>
+        <!-- Fine Contatti -->
+
+        <!-- Footer -->
+        <footer></footer>
+        <!-- Fine Footer -->
     </body>
 </html>

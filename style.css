@@ -4,26 +4,55 @@
 
 :root {
     --general-bg-color: #eee;
+    --color-alpha: #333333;
+    --color-beta: #9cafb7;
+    --color-delta: #ad0020;
+    --color-gamma: #fff;
+
+    --box-shadow-90deg: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Text Colors and BG Colors */
+
+.bg-alpha {
+    background-color: var(--color-alpha);
+}
+
+.bg-beta {
+    background-color: var(--color-beta);
+}
+
+.bg-gamma {
+    background-color: var(--color-gamma);
+}
+
+.box-shadow-90deg {
+    box-shadow: var(--box-shadow-90deg);
 }
 
 /* General */
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
+    padding: 0;
     margin: 0;
-    background: var(--general-bg-color);
+    background: var(--color-gamma);
     font-family: 'Roboto', sans-serif;
+    height: 4000px;
 }
 
 h1,
 h1,
 h3,
+h4,
 .h1,
 .h2,
-.h3 {
+.h3,
+.h4 {
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -31,8 +60,94 @@ a {
     text-decoration: none;
 }
 
+a:link {
+    color: #fff;
+}
+
 li {
     list-style: none;
 }
 
-/* Text Colors and BG Colors */
+/* Navbar */
+
+nav {
+    transition: 0.4s;
+}
+
+nav .collapse ul li a h4 {
+    color: var(--color-alpha);
+}
+
+.logo {
+    height: 60px;
+    -webkit-filter: drop-shadow(5px 5px 5px #323232bf);
+    filter: drop-shadow(5px 5px 3px #1a1a1ad5);
+}
+
+.btn-custom {
+    height: 40px;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 2px solid var(--color-beta);
+    border-radius: 7px;
+    background-color: var(--color-delta);
+    box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-custom {
+        font-size: 1rem;
+    }
+}
+
+.btn-custom:hover {
+    transform: scale(1.05);
+}
+
+.btn-custom:active {
+    background-color: var(--accent-dark-color);
+    transform: translateY(2px);
+}
+
+.active-custom {
+    border-bottom: 5px solid black;
+    transition: 0.3 ease border-bottom;
+}
+
+/* Header */
+
+.header-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-img {
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 1)
+        ),
+        url(./media/rubinetto_1920.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    .header-img {
+        background: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 1)
+            ),
+            url(./media/rubinetto_1280.jpg);
+        min-height: 100vw;
+        background-repeat: no-repeat;
+    }
+}
+
+.header-box {
+    min-height: 100vh;
+}
