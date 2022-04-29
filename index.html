@@ -302,10 +302,111 @@
         <!-- Fine Gallery -->
 
         <!-- Contatti -->
-        <section id="contatti" class="h-25 bg-success">
-            <h2>Contatti</h2>
+        <section id="contatti">
+            <h2 class="contatti-title">Contatti</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2336.306429767507!2d8.667875979003096!3d45.86426216316559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478678176b4ce801%3A0xf3c8d7bc85067508!2sVia%20Trieste%2C%20100%2C%2021023%20Besozzo%20VA!5e0!3m2!1sen!2sit!4v1651229114264!5m2!1sen!2sit"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div id="card-wrapper">
+                <div
+                    class="card-custom col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center mx-auto mb-5 box-shadow-90deg"
+                >
+                    <h2>Sede</h2>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/zzcjjxew.json"
+                        trigger="loop"
+                        style="width: 60px; height: 60px"
+                    >
+                    </lord-icon>
+                    <p class="lead">Via Trieste 100</p>
+                    <p class="lead">21023 Besozzo (VA)</p>
+                </div>
+                <div
+                    class="card-custom col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center mx-auto mb-5 box-shadow-90deg"
+                >
+                    <h2>Recapiti</h2>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/rhvddzym.json"
+                        trigger="loop"
+                        style="width: 60px; height: 60px"
+                    >
+                    </lord-icon>
+                    <p class="lead">+39 0332 798217</p>
+                    <p class="lead">info@climassistance.com</p>
+                </div>
+                <div
+                    class="card-custom col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center mx-auto mb-5 box-shadow-90deg"
+                >
+                    <h2>Recapiti</h2>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/kbtmbyzy.json"
+                        trigger="loop"
+                        style="width: 60px; height: 60px"
+                    >
+                    </lord-icon>
+                    <p class="lead">LUN -VEN</p>
+                    <p class="lead">08:00 - 12:00</p>
+                    <p class="lead">14:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 my-auto mx-auto">
+                <form
+                    class="form-box p-4 p-md-5 border rounded-3 bg-light mb-5 mb-lg-0 me-2 me-md-5"
+                    action=""
+                    method="POST"
+                >
+                    <input type="hidden" name="recipient" value="info@climassistance.com" />
+                    <input type="hidden" name="subject" value="Richiesta informazioni dal sito" />
+                    <input type="hidden" name="redirect" value="#" />
+                    <input type="hidden" name="missing_fields_redirect" value="#" />
+                    <div class="form-floating mb-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="realname"
+                            id="floatingName"
+                            placeholder="Nome e Cognome"
+                            required
+                        />
+                        <label for="floatingName">*Nome e Cognome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="floatingEmail"
+                            placeholder="name@example.com"
+                            required
+                        />
+                        <label for="floatingInput">*Indirizzo Mail</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea
+                            class="form-control"
+                            placeholder="Scrivi il tuo messaggio"
+                            id="floatingTextarea"
+                            required
+                        ></textarea>
+                        <label for="floatingTextarea">*Scrivi il tuo messaggio</label>
+                    </div>
+                    <p class="mb-2">* Campi obbligatori</p>
+                    <button
+                        id="submit"
+                        class="w-100 btn-custom btn-lg bg-accent text-white"
+                        type="submit"
+                    >
+                        Invia
+                    </button>
+                    <hr class="my-4" />
+                    <p>Cliccando su Invia, accetti i termini d'uso</p>
+                </form>
+            </div>
         </section>
-        <!-- Fine Contatti -->
+        <!-- Fine Contatti  https://cdn.lordicon.com/kbtmbyzy.json -->
 
         <!-- Footer -->
         <footer></footer>
