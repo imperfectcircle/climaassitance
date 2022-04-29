@@ -174,7 +174,7 @@ nav .collapse ul li a h4 {
 
 #home-subsection {
     background-color: var(--general-bg-color);
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     display: inline-block;
 }
@@ -188,6 +188,7 @@ nav .collapse ul li a h4 {
     width: 90%;
     margin: 1rem auto;
     padding: 3rem;
+    align-items: center;
 }
 
 #home-subsection li {
