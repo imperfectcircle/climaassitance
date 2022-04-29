@@ -122,8 +122,12 @@ nav .collapse ul li a h4 {
 }
 
 .active-custom {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid rgb(0, 102, 255);
     transition: 0.3 ease border-bottom;
+}
+
+.active-custom a h4 {
+    color: rgb(0, 102, 255) !important;
 }
 
 /* Header */
